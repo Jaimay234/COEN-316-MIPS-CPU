@@ -4,7 +4,7 @@
 This CPU was designed with a standard MIPS ISA in mind. The 32 bit MIPS processor was 32 bit in nature but masked down to 4 bits due to hardware constraints
 
 ## Overview
-This project is a modular implementation of a mips Processor in VHDL as a part of the course COEN 316. It follows a structured data path and control architecture and supports a predefined subset of MIPS instructions.
+This project is a modular implementation of a mips Processor in VHDL as a part of the course COEN 316. It follows a structured data path and control architecture and supports a predefined subset of MIPS instructions. This was designed as a single cycle implementation (every single instruction performed simultaneously) rather than a traditional pipelined system. This was set up on a nexys board with a limited number of switches (12) available. This would not be enough to manually override the clock and manually trigger the desired instructions. The 32 bit functionality was sacrificed as can be seen by the top level entity specification of CPU.vhd which is the one that links directly downwards to the rest. This means that while each can be simulated independently the fully functioning CPU should use specifically that entity to integrate the other components.
 
 The cpu is built from: The ALU, register file, control unit, and datapath integration
 
@@ -65,3 +65,9 @@ The cpu is built from: The ALU, register file, control unit, and datapath integr
 - Optimize performance
 - Stall detection
  
+### How to run:
+- Download .vhd files
+- Create and upload them into a new modelsim project
+- compile the files (Vcom in terminal)
+- simulate the entity (the CPU entity is the highest level)
+- iterate through the program (It is pre-programmed with load register, load register, add + , branch to add if condition met, infinite loop) 
