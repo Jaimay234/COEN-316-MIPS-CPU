@@ -48,7 +48,7 @@ The cpu is built from: The ALU, register file, control unit, and datapath integr
 ### Tests
 - Individual modules outputs independently verified
 - Tested via loading instructions from Instruction cache
-- Waveforms used to validate correct propogation and execution
+- Waveforms used to validate correct propagation and execution
 
 ### Outcomes
 - CPU datapath design
