@@ -10,14 +10,14 @@ The cpu is built from: The ALU, register file, control unit, and datapath integr
 
 ## Architecture
 
-### Datapath Componenents
+### Datapath Components
 [Datapath Signals](COEN316ControlSignals.pdf)
 - #### Register File
   - 32 general purpose registers
   - Dual read
   - singular write architecture
 - #### ALU
-  - Suports arithmetic and logical expressions
+  - Supports arithmetic and logical expressions
   - Controlled via signals from control unit
 - #### Program Counter
   - Sequential instruction execution
@@ -69,5 +69,5 @@ The cpu is built from: The ALU, register file, control unit, and datapath integr
 - Download .vhd files
 - Create and upload them into a new modelsim project
 - compile the files (Vcom in terminal)
-- simulate the entity (the CPU entity is the highest level)
+- simulate the entity (the CPU entity is the highest level, from CPU.vhd)
 - iterate through the program (It is pre-programmed with load register, load register, add + , branch to add if condition met, infinite loop) 
