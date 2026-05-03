@@ -1,0 +1,2 @@
+# COEN-316-MIPS-CPU
+MIPS CPU to be built in COEN 316
