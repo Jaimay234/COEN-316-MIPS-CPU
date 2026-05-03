@@ -11,7 +11,7 @@ The cpu is built from: The ALU, register file, control unit, and datapath integr
 ## Architecture
 
 ### Datapath Componenents
-
+[Datapath Signals](COEN316ControlSignals.pdf)
 - #### Register File
   - 32 general purpose registers
   - Dual read
