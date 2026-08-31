@@ -1,4 +1,4 @@
-# COEN-316-MIPS-CPU
+# MIPS-CPU
 
 #### Disclaimer
 This CPU was designed with a standard MIPS ISA in mind. The 32 bit MIPS processor was 32 bit in nature but masked down to 4 bits due to hardware constraints
